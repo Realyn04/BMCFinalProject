@@ -1,0 +1,49 @@
+name: ecommerce_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.2.1
+  flutter_native_splash: 2.4.0
+  firebase_auth: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# ============================================
+# FLUTTER CONFIGURATION
+# ============================================
+flutter:
+  uses-material-design: true
+
+  # Register assets folder
+  assets:
+    - assets/images/
+
+# ============================================
+# SPLASH SCREEN CONFIGURATION
+# ============================================
+flutter_native_splash:
+  # Background color (white)
+  color: "#FFFFFF"
+
+  # Splash logo path
+  image: assets/images/splash_logo.png
+
+  # Android 12+ specific config
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/splash_logo.png
+
+  # Web config
+  web: true
